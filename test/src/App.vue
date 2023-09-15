@@ -8,6 +8,7 @@ import TableView from './components/TableView.vue'
 import PriceView from './components/PriceView.vue';
 import FeaturesView from './components/FeaturesView.vue';
 import FeedbackView from './components/FeedbackView.vue';
+import ModalVuew from './components/UI/ModalVuew.vue';
 </script>
 
 <template>
@@ -22,6 +23,7 @@ import FeedbackView from './components/FeedbackView.vue';
     <MapView />
   </main>
   <FooterView />
+  <ModalVuew />
 </template>
 
 <style scoped>

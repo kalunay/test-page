@@ -407,6 +407,7 @@ linear-gradient(0deg, #4851FD, #4851FD);
     font-weight: 600;
     line-height: 28px;
     color: #fff;
+    text-align: left;
 }
 
 .feedback__field input,
@@ -549,10 +550,10 @@ linear-gradient(0deg, #4851FD, #4851FD);
 }
 
 .modal__header {
-    font-size: 24px;
+    font-size: 36px;
     font-weight: 700;
-    line-height: 32px;
-    text-align: center;
+    line-height: 48px;
+    text-align: left;
     color: #fff;
 }
 
@@ -573,12 +574,15 @@ linear-gradient(0deg, #4851FD, #4851FD);
     flex-direction: column;
     justify-content: space-between;
     z-index: 9999;
-    padding: 72px 16px 48px 16px;
+    padding: 119px;
     position: relative;
+
+    width: 40%;
 
     text-align: center;
     color: rgba(255, 255, 255, .5);
     border-radius: 32px;
+    gap: 32px;
 }
 
 .modal {
@@ -595,6 +599,8 @@ linear-gradient(0deg, #4851FD, #4851FD);
     align-items: center;
     justify-content: center;
 }
+
+.modal.active { display: flex; }
 
 .mobile { display: none; }
 
@@ -760,6 +766,15 @@ header p {
 .services .carousel__pagination,
 .services .carousel__next,
 .services .carousel__prev { display: none; }
+.modal_footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.modal_footer p {
+    text-align: left;
+}
 
 @media (max-width: 1366px) {
     .container,
@@ -954,6 +969,7 @@ linear-gradient(0deg, #4851FD, #4851FD);
         width: 647px;
         text-align: left;
         z-index: 9999;
+        padding: 72px 16px 48px 16px;
     }
 
     .footer__menu {
@@ -973,6 +989,11 @@ linear-gradient(0deg, #4851FD, #4851FD);
 
     .services .carousel__pagination { display: flex; }
     .feedback > div { width: 100%; }
+    .modal__header {
+        font-size: 24px;
+        line-height: 32px;
+        text-align: center;
+    }
 }
 
 @media (max-width: 480px) {
@@ -1166,6 +1187,7 @@ linear-gradient(0deg, #4851FD, #4851FD);
     .services .carousel__viewport { max-width: 320px !important; }
     .header__top a { font-size: 13px; }
     .header__top, .header__top .logo { font-size: 16px; line-height: 20px; }
+    .modal_footer { flex-direction: column; }
 }
 
 .carousel { text-align: left !important; }

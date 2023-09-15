@@ -29,7 +29,7 @@ const breakpoints = ref({
       <div class="services__wrap">
 
         <carousel :breakpoints="breakpoints">
-            <slide :key="s1">
+            <slide :key="1">
               <div class="services__item">
                 <div class="services__item-header">Сопровождение камеральных и выездных налоговых проверок</div>
                 <ul>
@@ -48,7 +48,7 @@ const breakpoints = ref({
               </div>              
             </slide>
 
-            <slide :key="s2">
+            <slide :key="2">
               <div class="services__item">
                 <div class="services__item-header">Услуги по правовому обслуживанию</div>
                 <ul>
@@ -66,7 +66,7 @@ const breakpoints = ref({
               </div>              
             </slide>
             
-            <slide :key="s3">
+            <slide :key="3">
               <div class="services__item">
                 <div class="services__item-header">Дополнительно к расчетной цене устанавливаются надбавки</div>
                 <ul>
