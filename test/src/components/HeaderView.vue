@@ -2,17 +2,9 @@
 import NavTop from './header/NavTop.vue';
 import HeaderText from './header/HeaderText.vue';
 import { menu, title, subtitle, button } from "../constants";
-import { ref } from 'vue';
-
-const showPop = ref(0)
-
-const changeShowPop = () => {
-    console.log(showPop);
-    return showPop;
-}
 </script>
 
-<template> {{ showPop }}
+<template>
     <header>
         <div class="container">
         <div class="header">
@@ -25,7 +17,7 @@ const changeShowPop = () => {
             <div class="d-flex">
                 <a href="#">8 (812) 603-71-79</a>
                 <img src="../../public/img/menu-04.png" class="mobile" alt="">
-                <a href="#" class="btn-feedback" @click.prevent="changeShowPop">Обратный звонок</a>
+                <a href="#" class="btn-feedback">Обратный звонок</a>
             </div>
             </div>
             <div class="header__bottom">

@@ -23,7 +23,6 @@ import ModalVuew from './components/UI/ModalVuew.vue';
     <MapView />
   </main>
   <FooterView />
-  <ModalVuew />
 </template>
 
 <style scoped>
