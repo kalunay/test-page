@@ -16,7 +16,7 @@ import { menu, title, subtitle, button } from "../constants";
             </div>
             <div class="d-flex">
                 <a href="#">8 (812) 603-71-79</a>
-                <img src="./img/menu-04.png" class="mobile" alt="">
+                <img src="../../public/img/menu-04.png" class="mobile" alt="">
                 <a href="#" class="btn-feedback">Обратный звонок</a>
             </div>
             </div>
